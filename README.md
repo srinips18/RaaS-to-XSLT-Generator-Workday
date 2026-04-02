@@ -237,7 +237,7 @@ No extensions or plugins required. Works fully offline after the initial page lo
 
 ## Contributing
 
-Pull requests welcome. The `workday-mapper_v1_with_comments.html` file is the source of truth — the no-comments version is derived from it.
+Pull requests welcome.
 
 Key areas for contribution:
 - Additional transforms (custom date formats, new string operations)
