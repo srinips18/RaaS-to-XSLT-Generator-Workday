@@ -268,6 +268,6 @@ Key areas for contribution:
 
 ## License
 
-MIT License — Copyright (c) 2025 Srini · Kelly Services · Workday Dev
+MIT License — Copyright (c) 2026 Srini · Kelly Services · Workday Dev
 
 Free to use, modify, and share. See license text at the top of either HTML file.
