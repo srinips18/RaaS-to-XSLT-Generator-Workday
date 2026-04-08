@@ -32,9 +32,8 @@ This tool collapses that 2–4 hour process into 5–10 minutes. Upload your XML
 No install. No server. No internet required after the page loads (Google Fonts are optional — the tool falls back to system fonts if offline).
 
 ---
-## Bugs and features added 04/08/2026
+## Bugs Fixed 04/08/2026
 
-### BUGS fixed:
 1. saveConfig drops otherwiseMode, otherwiseField, otherwiseTransform, otherwiseTransformParam
 The OTHERWISE dropdown supports three modes (Text / Field / XPath) with field selection and transform. These are in mkCol and used in XSLT generation — but none of them are in the cols.map(c => ({...})) in saveConfig. After a save/load, the OTHERWISE always resets to plain Text mode, losing any Field or XPath otherwise values.
 2. Fixed-width column widths don't survive save/load
