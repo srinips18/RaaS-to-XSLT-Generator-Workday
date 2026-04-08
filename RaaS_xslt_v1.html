@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  Workday XML → XSLT Mapper  |  v1.1
+  RaaS to XSLT for EIB |  v1.1
   ─────────────────────────────────────────────────────────────────
   MIT License
 
@@ -256,14 +256,14 @@ tr.row-flash td{animation:rowFlash .9s ease-out}
       <span class="hdr-author">By <strong>Srini</strong> · Kelly · Workday Dev</span>
     </div>
     <div class="hdr-meta-right">
-      <span class="hdr-copy">Free to use, modify &amp; share · MIT License © 2026</span>
+      <span class="hdr-copy">Free to use, modify &amp; share · MIT License © 2026 </span>
     </div>
   </div>
 
   <div class="hdr-main">
     <div>
-      <h1>Workday XML → XSLT Mapper</h1>
-      <div class="sub">Upload any Workday Report XML · Auto-detect fields · Configure mapping · Preview output · Download XSLT</div>
+      <h1>RaaS to XSLT for EIB</h1>
+      <div class="sub">Upload any RaaS enabled Report XML · Auto-detect fields · Configure mapping · Preview output · Download XSLT</div>
     </div>
   </div>
 </header>
@@ -273,7 +273,7 @@ tr.row-flash td{animation:rowFlash .9s ease-out}
   <div class="step">
     <div class="step-head">
       <div class="step-num">1</div>
-      <div class="step-title">Upload Workday XML</div>
+      <div class="step-title">Upload XML</div>
     </div>
     <div class="step-body" style="padding:14px 20px">
 
@@ -515,7 +515,7 @@ tr.row-flash td{animation:rowFlash .9s ease-out}
           </div>
           <div>
             <label>Author / Team</label>
-            <input type="text" id="cmt-author" placeholder="e.g. HCM Team" oninput="refreshXsltComments()">
+            <input type="text" id="cmt-author" placeholder="e.g.  HCM Team" oninput="refreshXsltComments()">
           </div>
           <div>
             <label>Target System / Integration</label>
@@ -2199,12 +2199,9 @@ function aggColXSLTExpr(col) {
 
   if (mode === 'child') {
 
-    const childXp = grpPath.split('/').map(s => 'wd:' + s).join('/');
-
-    let relXp = col.fp ? fp2xpath(col.fp) : "''";
-
     const grpPath = firstGroupPath();
-  const isChildField = grpPath && col.fp && col.fp.startsWith(grpPath + '/');
+    const childXp = grpPath ? grpPath.split('/').map(s => 'wd:' + s).join('/') : '';
+    const isChildField = grpPath && col.fp && col.fp.startsWith(grpPath + '/');
     const parentXp = col.fp ? col.fp.split('/').map(s => 'wd:' + s).join('/') : "''";
 
     let childRelXp = '';
