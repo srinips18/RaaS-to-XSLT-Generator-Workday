@@ -3,6 +3,7 @@
 > **v1.1** · MIT License · By Srini · Kelly · Workday Dev Community
 
 A single-file, browser-based tool that transforms any Workday RaaS XML export into a production-ready XSLT 3.0 stylesheet in minutes — no server, no installation, no dependencies.
+**Disclaimer:**  Is an internal tool built to accelerate documentation for our work. It is not affiliated with, endorsed by, or sponsored by Workday, Inc. “Workday” is a registered trademark of Workday, Inc., used here solely to describe the platform our team works on. Generated documents are drafts intended for human review. 
 
 ---
 
